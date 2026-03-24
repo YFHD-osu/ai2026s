@@ -15,7 +15,7 @@
 
 <title>作業一</title>
 <!-- https://alexlenail.me/NN-SVG/about.html -->
-<link rel="icon" href="../hw00/favicon.svg"/>
+<link rel="icon" href="../hw00/favicon.png"/>
 <style type="text/css">
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 
@@ -153,7 +153,10 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      本次作業的內容讓我回想起童年時光，炙熱的夏日、沒有冷氣、坐在不舒服的椅子上，奮筆疾書。
+      當時還想著自己何時才能脫離這枯燥乏味的日常，但長大之後才發現自己當年還是比較幸福了。
+      在撰寫千字文時我有感而發，不禁放慢了原本快速揮動的筆觸，細細位這種橫跨自然、歷史、人文的文字盛宴，
+      感受天人合一的境界。
     </div>
   </div>
 
@@ -169,22 +172,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
           <td>Simple baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
           <td>Medium baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
           <td>Strong baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" ></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -194,14 +197,42 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+
+   <div class="row hw12 bottomrow">
+    <div class="col-md-3 twenty">
+      <figcaption>1. 千字文 第1頁</figcaption>
+      <img class="withborder" src="./assets/1-1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>2. 長恨歌 第1頁</figcaption>
+      <img class="withborder" src="./assets/2-1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>3. 洛神賦 第1頁</figcaption>
+      <img class="withborder" src="./assets/3-1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>4. 詩經 第1頁</figcaption>
+      <img class="withborder" src="./assets/4-1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>5. 注音、部首 第1頁</figcaption>
+      <img class="withborder" src="./assets/5-1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption>6. 英文、數字 第1頁</figcaption>
+      <img class="withborder" src="./assets/6-1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption> 7. 標點符號 第1頁</figcaption>
+      <img class="withborder" src="./assets/7-1.png" width="100%">
+    </div>
+    <div class="col-md-3 twenty">
+      <figcaption> 8. 姓氏名字號 第1頁</figcaption>
+      <img class="withborder" src="./assets/7-1.png" width="100%">
     </div>
   </div>
-
+  
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
@@ -219,9 +250,6 @@
   d3.select("#myCheckbox2").on("change",update);
   d3.select("#myCheckbox3").on("change",update);
   d3.select("#myCheckbox4").on("change",update);
-  // d3.select("#myCheckbox5").on("change",update);
-  // d3.select("#myCheckbox6").on("change",update);
-  // d3.select("#myCheckbox7").on("change",update);
 
   update();
   
