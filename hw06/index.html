@@ -153,7 +153,9 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      本次作業是接觸文生影片的初步應用，使用的是目前提供個人使用功能最齊全的文生圖工具ComfyUI，
+      以及使用在Civitai上開源的模型，透過節點式的方式連接模塊，構建工作流並執行產生影片，
+      過程有趣且也能透過該過程理解模型運作流程，最後成功生成影像。
     </div>
   </div>
 
@@ -169,22 +171,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - Comfy UI 環境設定完成</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 生成角色的圖片</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 生成完整角色動畫</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,13 +197,93 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">
+      <figcaption>Comfy UI 環境設定完成</figcaption>
+      <a href="https://civitai.com/models/61643?modelVersionId=67841">CheckPoint: based66_v30</a><br>
+      <a href="https://civitai.com/models/69977/chibi-laugh">LoRA:  chibi-laugh</a><br>  
+      <img src="1.png"  width="100%"><br>
+    </div>
+  </div>
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 1</figcaption>
+      <img src="2.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 2</figcaption>
+      <img src="5.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 3</figcaption>
+      <img src="7.png"  width="100%"><br>
     </div>
   </div>
 
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 1</figcaption>
+      <img src="1.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0" : "woman, jeans, open door, dark room inside, strong wind",
+          "10" : "woman, jeans, jumping out, sky, clouds",
+          "20" : "woman, jeans, free fall, high altitude, fast wind, sky",
+          "30" : "woman, jeans, free fall, blue sky, white clouds",
+          "40" : "woman, jeans, free fall, sky background",
+          "50" : "woman, jeans, pulling parachute cord, action",
+          "60" : "woman, jeans, parachute opening, sky",
+          "67" : "woman, jeans, parachute open, SIX SEVEN power sky",
+          "70" : "woman, jeans, floating, open parachute, sky",
+          "80" : "woman, jeans, landing soon, ground view",
+          "90" : "woman, jeans, touching ground, legs bending, impact",
+          "100" : "woman, jeans, safe landing, parachute dropping",
+          "110" : "woman, jeans, standing, looking at camera, smile"
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 2</figcaption>
+      <img src="2.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0" : "woman, sportswear, running, starting pose, slow motion",
+          "10" : "woman, sportswear, jogging, forward movement, pavement",
+          "20" : "woman, sportswear, running fast, arms pumping, side view",
+          "30" : "woman, sportswear, sprinting, legs moving fast, dynamic stride",
+          "40" : "woman, sportswear, running, body leaning forward, wind blowing hair",
+          "50" : "woman, sportswear, running, breathing hard, energetic face",
+          "60" : "woman, sportswear, running, big stride, long steps",
+          "67" : "woman, sportswear, SIX SEVEN fast running speed, strong legs power",
+          "70" : "woman, sportswear, running, close up face, sweating, smile",
+          "80" : "woman, sportswear, slowing down, jogging, approaching finish line",
+          "90" : "woman, sportswear, stop running, walking slow, heavy breathing",
+          "100" : "woman, sportswear, standing, arms on hips, catching breath",
+          "110" : "woman, sportswear, looking at camera, happy smile, finished"
+          <br><br>
+          使用負面提示詞:
+          (bad quality, worst quality:1.2), sheer, transparent, translucent, revealing, wet clothes
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 3</figcaption>
+      <img src="3.gif" width="100%"><br>
+      <td> 使用提示詞:
+        "0" : "man, suit, sitting at table, plate of spaghetti, fork in hand",
+        "10" : "man, suit, holding fork, putting fork into spaghetti, looking down",
+        "20" : "man, suit, twirling spaghetti with fork, pasta spinning, close up",
+        "30" : "man, suit, lifting fork, spaghetti on fork, moving to mouth",
+        "40" : "man, suit, opening mouth, eating spaghetti, food action",
+        "50" : "man, suit, chewing, delicious taste, holding fork, napkin on table",
+        "60" : "man, suit, swallowing, satisfied face, gourmet food",
+        "67" : "man, suit, SIX SEVEN style pasta dinner, premium power taste",
+        "70" : "man, suit, picking up wine glass, drinking water, elegant pose",
+        "80" : "man, suit, putting down glass, looking at plate, second bite",
+        "90" : "man, suit, twirling spaghetti again, fork movement",
+        "100" : "man, suit, chewing, smiling face, looking at camera",
+        "110" : "man, suit, holding fork, sitting back, finished meal, smile"    
+      </td>
+    </div>
+  </div>
+  <!-- ------------------------------------------------>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
@@ -252,4 +334,3 @@
 
 </body>
 </html>
-
