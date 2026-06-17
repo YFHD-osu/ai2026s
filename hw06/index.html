@@ -153,9 +153,8 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      本次作業是接觸文生影片的初步應用，使用的是目前提供個人使用功能最齊全的文生圖工具ComfyUI，
-      以及使用在Civitai上開源的模型，透過節點式的方式連接模塊，構建工作流並執行產生影片，
-      過程有趣且也能透過該過程理解模型運作流程，最後成功生成影像。
+      本次作業讓我意識到本地影片生成模型的算力消耗是多麼的大，不僅速度慢且效果相當有限，很有可能就不小心生成出鬼娃這樣的陰間產物。
+      我同時好像也能理解為什麼 OpenAI 將 Sora 模型給關閉了，畢竟那些高品值的影片會需要相當大的電力與用水，因此可推測即使採取使用者付費也難以營利。
     </div>
   </div>
 
@@ -201,22 +200,22 @@
       <figcaption>Comfy UI 環境設定完成</figcaption>
       <a href="https://civitai.com/models/61643?modelVersionId=67841">CheckPoint: based66_v30</a><br>
       <a href="https://civitai.com/models/69977/chibi-laugh">LoRA:  chibi-laugh</a><br>  
-      <img src="1.png"  width="100%"><br>
+      <img src="0.png"  width="100%"><br>
     </div>
   </div>
   
   <div class="row hw12 bottomrow">
     <div class="col-md-4 twenty" style="background-color:#ff0000;">
       <figcaption>生成角色的圖片 - 1</figcaption>
-      <img src="2.png"  width="100%"><br>
+      <img src="1.png"  width="100%"><br>
     </div>
     <div class="col-md-4 twenty" style="background-color:#ff0000;">
       <figcaption>生成角色的圖片 - 2</figcaption>
-      <img src="5.png"  width="100%"><br>
+      <img src="2.png"  width="100%"><br>
     </div>
     <div class="col-md-4 twenty" style="background-color:#ff0000;">
       <figcaption>生成角色的圖片 - 3</figcaption>
-      <img src="7.png"  width="100%"><br>
+      <img src="3.png"  width="100%"><br>
     </div>
   </div>
 
@@ -239,6 +238,9 @@
           "90" : "woman, jeans, touching ground, legs bending, impact",
           "100" : "woman, jeans, safe landing, parachute dropping",
           "110" : "woman, jeans, standing, looking at camera, smile"
+          <br><br>
+          使用負面提示詞:
+          (bad quality, worst quality:1.2, nsfw)
       </td>
     </div>
     <div class="col-md-4 twenty" style="background-color:#7030a0;">
@@ -260,7 +262,7 @@
           "110" : "woman, sportswear, looking at camera, happy smile, finished"
           <br><br>
           使用負面提示詞:
-          (bad quality, worst quality:1.2), sheer, transparent, translucent, revealing, wet clothes
+          (bad quality, worst quality:1.2, nsfw)
       </td>
     </div>
     <div class="col-md-4 twenty" style="background-color:#7030a0;">
@@ -279,7 +281,10 @@
         "80" : "man, suit, putting down glass, looking at plate, second bite",
         "90" : "man, suit, twirling spaghetti again, fork movement",
         "100" : "man, suit, chewing, smiling face, looking at camera",
-        "110" : "man, suit, holding fork, sitting back, finished meal, smile"    
+        "110" : "man, suit, holding fork, sitting back, finished meal, smile"
+        <br><br>
+          使用負面提示詞:
+          (bad quality, worst quality:1.2, nsfw)
       </td>
     </div>
   </div>
